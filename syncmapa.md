@@ -298,6 +298,9 @@ Element EnergyOperator
     <td>role-type</td>
     <td>Rolle des Marktpartners lt. BDEW Richtlinien.
         Moegliche Optionen:
+      <ul>
+        <li>BIKO</li>
+      </ul>
         -	BIKO
         -	BKV
         -	EIV
