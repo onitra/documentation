@@ -263,8 +263,6 @@ Falls die GlobalProperty B3P_MPID_DATA_FROM_DB auf true gesetzt ist, können Mar
 ### Beschreibung der Paramater
 Element EnergyOperator
 
-
-
 <table>
   <tr>
     <td>referenceId</td>
@@ -300,28 +298,98 @@ Element EnergyOperator
         Moegliche Optionen:
       <ul>
         <li>BIKO</li>
+        <li>BKV</li>
+        <li>EIV</li>
+        <li>LF</li>
+        <li>MGV</li>
+        <li>MSB</li>
+        <li>NB</li>
+        <li>RB</li>
+        <li>UNB</li>
       </ul>
-        -	BIKO
-        -	BKV
-        -	EIV
-        -	LF
-        -	MGV
-        -	MSB
-        -	NB
-        -	RB
-        -	UNB
     </td>
   </tr>
   <tr>
     <td>sector-type</td>
     <td>
       Marktsegment:
-      -	ELECTRICITY
-      -	GAS
+       <ul>
+        <li>ELECTRICITY</li>
+        <li>GAS</li>
+      </ul>
   </td>
   </tr>
   <tr>
     <td>Contact</td>
     <td>Ansprechspartner. Typ: Contact, siehe unten.</td>
+  </tr>
+</table>
+
+Element Contact
+<table>
+  <tr>
+    <td>type</td>
+    <td>Art der Kontaktperson. Muss mit der einstellung in B2BBP passen.</td>
+  </tr>
+  <tr>
+    <td>firstname</td>
+    <td>Vorname</td>
+  </tr>
+  <tr>
+    <td>lastname</td>
+    <td>Nachname</td>
+  </tr>
+  <tr>
+    <td>email</td>
+    <td>E-Mail-Adresse der Kontaktperson</td>
+  </tr>
+  <tr>
+    <td>telephoneNumber</td>
+    <td>Telefonnummer der Kontakperson</td>
+  </tr>
+  <tr>
+    <td>validFrom</td>
+    <td>Gueltig ab</td>
+  </tr>
+    <tr>
+    <td>validTo</td>
+    <td>Gueltig bis. Wenn nich angegegen dann 31.12.9999</td>
+  </tr>
+</table>
+
+Element SyncResponse
+<table>
+  <tr>
+    <td>success</td>
+    <td>True oder False.
+        Weisst auf ein Grundlegendes Fehler hin. Z.B. wenn DB Zugriff nicht moeglich ist.
+        Wenn mindestens ein EnergyOperator erfolgreich eingetragen dann ist der Wert true.
+    </td>
+  </tr>
+  <tr>
+    <td>faultMessage</td>
+    <td>Generelle Fehlernachricht. Z.B. DB Zugriff nicht moeglich.</td>
+  </tr>
+  <tr>
+    <td>syncStatusList</td>
+    <td>Eine Liste mit status zu der Synchornisation der einzelenen Energy Operator. Typ: energyOperatorSyncResult</td>
+  </tr>
+</table>
+
+Element energyOperatorSyncResult
+<table>
+  <tr>
+    <td>success</td>
+    <td>True oder False, je nachdem, ob die Synchronisation des Energy Operators erfoglreich war.
+    </td>
+  </tr>
+  <tr>
+    <td>faultMessage</td>
+    <td>Fehlernachricht. Wenn erfolgreich, dann leer.
+  </td>
+  </tr>
+  <tr>
+    <td>referenceId</td>
+    <td>Referenz ID zum Objekt zu dem der Status der Synchronisation gemeldet wird.Referenz ID zum Objekt zu dem der Status der     Synchronisation gemeldet wird.</td>
   </tr>
 </table>
