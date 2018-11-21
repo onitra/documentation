@@ -21,7 +21,7 @@ Alternativ zur Befüllung der Marktpartner aus der UI ist es möglich, die Markt
 
 Der Webservice ist ein Content, welcher durch NLI bereitgestellt werden kann.
 
-# Einrichtung
+## Einrichtung
 
 Die Einrichtung und Konfiguration der Webservices ist in folgender Dokumentation allgemein be-schrieben:
 [Webservice (Receiver)](http://b2bbp.next-level-help.org/b2b_cust_CXFDynamicReceiverServlet.html)
@@ -64,7 +64,17 @@ Folgende Konfiguration kann benutzt werden:
   </tr>
     <tr>
     <td>Document</td>
-    <td>_Die syncmapa jar_</td>
+    <td>Die syncmapa jar</td>
     <td></td>
+  </tr>
+</table>
+
+### Customizing
+Folgende GlobalProperty kann konfiguriert werden
+<table>
+  <tr>
+    <td>B3P_MPID_DATA_FROM_DB</td>
+    <td>"true" oder "false" (Default false)</td>
+    <td>Ist dieser Wert auf “true“ gesetzt werden die Marktpartner aus der Databanktabelle B2BBP_DATA_MP ermittelt.</td>
   </tr>
 </table>
