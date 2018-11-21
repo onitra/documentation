@@ -94,7 +94,7 @@ Falls die GlobalProperty B3P_MPID_DATA_FROM_DB auf true gesetzt ist, können Mar
 ~~~ xml
 <?xml version="1.0" encoding="UTF-8"?>
 <wsdl:definitions name="SyncMaPaService" targetNamespace="http://nextlevel.com/webservices/syncmapa" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://nextlevel.com/webservices/syncmapa" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
-    <wsdl:types>
+  <wsdl:types>
     <xs:schema elementFormDefault="unqualified" targetNamespace="http://nextlevel.com/webservices/syncmapa" version="1.0" xmlns:ns1="http://nextlevel.com/webservices/SyncResponse" xmlns:tns="http://nextlevel.com/webservices/syncmapa" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:import namespace="http://nextlevel.com/webservices/SyncResponse"/>
 
@@ -220,7 +220,7 @@ Falls die GlobalProperty B3P_MPID_DATA_FROM_DB auf true gesetzt ist, können Mar
       </wsdl:port>
     </wsdl:service>
 
-    </wsdl:definitions>
+</wsdl:definitions>
 ~~~
 
 ## XML Aufruf Bespiel
@@ -260,3 +260,50 @@ Falls die GlobalProperty B3P_MPID_DATA_FROM_DB auf true gesetzt ist, können Mar
 </soapenv:Body>
 </soapenv:Envelope>
 ~~~
+### Beschreibung der Paramater
+Element EnergyOperator
+
+
+
+<table>
+  <tr>
+    <td>referenceId</td>
+    <td>Refernz auf ein Objekt des Kunden. Hiermit kann der Kunde das Synchronisationsergebniss zum einzelenen Objekt im eigenen System bearbeiten</td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td>Name des Marktpartners</td>
+  </tr>
+    <tr>
+    <td>partnerCode</td>
+    <td>BDEW Code des Partners</td>
+  </tr>
+  <tr>
+    <td>systemCode</td>
+    <td>Eigene BDEW Code</td>
+  </tr>
+  <tr>
+    <td>one2oneAddress</td>
+    <td>Kommunikationsadresse</td>
+  </tr>
+  <tr>
+    <td>validFrom</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>validTo</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>role-type</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>sector-type</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Contact</td>
+    <td></td>
+  </tr>
+</table>
