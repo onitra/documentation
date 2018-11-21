@@ -288,22 +288,37 @@ Element EnergyOperator
   </tr>
   <tr>
     <td>validFrom</td>
-    <td></td>
+    <td>Gueltig ab</td>
   </tr>
   <tr>
     <td>validTo</td>
-    <td></td>
+    <td>Gueltig bis. Wenn nich angegegen dann 31.12.9999</td>
   </tr>
   <tr>
     <td>role-type</td>
-    <td></td>
+    <td>Rolle des Marktpartners lt. BDEW Richtlinien.
+        Moegliche Optionen:
+        -	BIKO
+        -	BKV
+        -	EIV
+        -	LF
+        -	MGV
+        -	MSB
+        -	NB
+        -	RB
+        -	UNB
+    </td>
   </tr>
   <tr>
     <td>sector-type</td>
-    <td></td>
+    <td>
+      Marktsegment:
+      -	ELECTRICITY
+      -	GAS
+  </td>
   </tr>
   <tr>
     <td>Contact</td>
-    <td></td>
+    <td>Ansprechspartner. Typ: Contact, siehe unten.</td>
   </tr>
 </table>
