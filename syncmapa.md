@@ -64,7 +64,7 @@ Folgende Konfiguration kann benutzt werden:
   </tr>
     <tr>
     <td>Document</td>
-    <td>Die syncmapa jar</td>
+    <td>_Die syncmapa jar_</td>
     <td></td>
   </tr>
 </table>
