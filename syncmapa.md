@@ -81,5 +81,5 @@ Folgende GlobalProperty kann konfiguriert werden
 
 ### Overrides & Erweiterungen
 Falls die GlobalProperty B3P_MPID_DATA_FROM_DB auf true gesetzt ist, können Marktpartner aus B2BBP nicht mehr editiert werden. Folgende Overrides müssen eingerichtet werden:  
-* Löschen Button deaktivieren:
+* Löschen Button deaktivieren:  
 \* Override={view=MPIDView, type=SetProperty, target=delete_button, name=enabled, value=false
