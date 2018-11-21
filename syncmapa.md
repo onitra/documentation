@@ -92,8 +92,8 @@ Falls die GlobalProperty B3P_MPID_DATA_FROM_DB auf true gesetzt ist, können Mar
 
 ## WSDL
 ~~~ xml
-    <?xml version="1.0" encoding="UTF-8"?>
-    <wsdl:definitions name="SyncMaPaService" targetNamespace="http://nextlevel.com/webservices/syncmapa" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://nextlevel.com/webservices/syncmapa" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="SyncMaPaService" targetNamespace="http://nextlevel.com/webservices/syncmapa" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://nextlevel.com/webservices/syncmapa" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
     <wsdl:types>
     <xs:schema elementFormDefault="unqualified" targetNamespace="http://nextlevel.com/webservices/syncmapa" version="1.0" xmlns:ns1="http://nextlevel.com/webservices/SyncResponse" xmlns:tns="http://nextlevel.com/webservices/syncmapa" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:import namespace="http://nextlevel.com/webservices/SyncResponse"/>
