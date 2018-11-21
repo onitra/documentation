@@ -32,4 +32,39 @@ Folgende Konfiguration kann benutzt werden:
     <th>Wert</th>
     <th>Beschreibung</th>
   </tr>
+  <tr>
+    <td>Provider</td>
+    <td>NLI</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Version</td>
+    <td>1.0</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Typ</td>
+    <td>CXF</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Format</td>
+    <td>WebService</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Fromat Version</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Zielformat</td>
+    <td>syncmapa</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Document</td>
+    <td>Die syncmapa jar</td>
+    <td></td>
+  </tr>
 </table>
