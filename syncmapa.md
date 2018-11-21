@@ -221,4 +221,40 @@ Falls die GlobalProperty B3P_MPID_DATA_FROM_DB auf true gesetzt ist, können Mar
 
     </wsdl:definitions>
 
+## XML Aufruf Bespiel
+~~~ xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:syn="http://nextlevel.com/webservices/syncmapa">
+<soapenv:Header/>
+<soapenv:Body>
+  <syn:addEnergyOperators>
+    <!--Zero or more repetitions:-->
+    <energyOperators>
+      <referenceId>1</referenceId>
+      <name>Markpartner Name</name>
+      <!--Optional:-->
+      <partnerCode>1234567890123</partnerCode>
+      <systemCode>3210987654321</systemCode>
+      <!--Optional:-->
+      <one2oneAddress>o@o.de</one2oneAddress>
 
+      <!--Optional:-->
+      <role>BIKO</role>
+      <!--Optional:-->
+      <sector>ELECTRICITY</sector>
+      <!--Optional:-->
+      <contact>
+        <!--Optional:-->
+        <type>CIN</type>
+        <firstName>Ionut</firstName>
+        <lastName>Popescu</lastName>
+        <!--Optional:-->
+        <email>i@p.ro</email>
+        <telephoneNumber>03213551651</telephoneNumber>
+        <validFrom>2001-10-26T19:32:52Z</validFrom>
+        <validTo>2020-10-26T19:32:52Z</validTo>
+      </contact>
+    </energyOperators>
+  </syn:addEnergyOperators>
+</soapenv:Body>
+</soapenv:Envelope>
+~~~
