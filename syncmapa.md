@@ -78,3 +78,8 @@ Folgende GlobalProperty kann konfiguriert werden
     <td>Ist dieser Wert auf “true“ gesetzt werden die Marktpartner aus der Databanktabelle B2BBP_DATA_MP ermittelt.</td>
   </tr>
 </table>
+
+### Overrides & Erweiterungen
+Falls die GlobalProperty B3P_MPID_DATA_FROM_DB auf true gesetzt ist, können Marktpartner aus B2BBP nicht mehr editiert werden. Folgende Overrides müssen eingerichtet werden:  
+* Löschen Button deaktivieren:
+\* Override={view=MPIDView, type=SetProperty, target=delete_button, name=enabled, value=false
