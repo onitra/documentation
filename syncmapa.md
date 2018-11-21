@@ -91,7 +91,7 @@ Falls die GlobalProperty B3P_MPID_DATA_FROM_DB auf true gesetzt ist, können Mar
 ```Override={view=MPIDView,type=SetProperty,target=export_button,name=enabled,value=false}```
 
 ## WSDL
-{% highlight xml %}
+~~~ xml
     <?xml version="1.0" encoding="UTF-8"?>
     <wsdl:definitions name="SyncMaPaService" targetNamespace="http://nextlevel.com/webservices/syncmapa" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://nextlevel.com/webservices/syncmapa" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
     <wsdl:types>
@@ -221,7 +221,8 @@ Falls die GlobalProperty B3P_MPID_DATA_FROM_DB auf true gesetzt ist, können Mar
     </wsdl:service>
 
     </wsdl:definitions>
-{% endhighlight %}
+~~~
+
 ## XML Aufruf Bespiel
 ~~~ xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:syn="http://nextlevel.com/webservices/syncmapa">
